@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.about_section_container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: $primary_color;
+  display: flex;
+  padding: $spacing_lg;
+  color: white;
+
+  p {
+    color: $primary_color;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  span {
+    color: black;
+    margin-bottom: 0.4rem;
+  
+}
+}
+
+.about_section_content {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0;
+
+  @include md{
+    letter-spacing: 0
+  }
+}
+
+.about_img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5rem;
+}
+
+
+.about_information{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
+}

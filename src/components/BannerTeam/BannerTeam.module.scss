@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+
+.banner_team{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:2rem;
+
+    @include md {
+        flex-direction: column;
+    }
+}
+
+
+
+.banner_description{
+    flex:1;
+    letter-spacing: 0.2rem;
+}
+
+
+.banner_team_img{
+    flex:1;
+    
+}
+
+
+

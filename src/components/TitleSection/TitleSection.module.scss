@@ -1,0 +1,14 @@
+@import "./../../styles/variables.scss";
+
+.title__section__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: $spacing-lg;
+  font-weight: 600;
+  color: $primary_color;
+  font-size: $font_xx_large;
+  text-transform: uppercase;
+  text-decoration: underline;
+}

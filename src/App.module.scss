@@ -1,0 +1,56 @@
+@import "./styles/variables.scss";
+
+.app_container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.app_background {
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  margin: auto;
+  object-fit: cover;
+
+  @include md {
+    width: 100vw;
+    height: 693px;
+    left: 0;
+    top: 92px;
+  }
+}
+
+.app__card__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap:2rem;
+  padding:1rem;
+  
+  @include md{
+    flex-direction: column;
+  }
+}
+
+.app_section_container {
+  width: 100%;
+  margin-top: 5rem;
+  padding: 0 $spacing-lg;
+
+  @include xl {
+    margin-top: 10rem;
+  }
+
+  @include lg {
+    margin-top: 14rem;
+  }
+
+  @include md {
+    margin-top: 0rem;
+  }
+
+  @include sm {
+    margin-top: 0rem;
+  }
+}

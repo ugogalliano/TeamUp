@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+.banner {
+  width: 100%;
+  padding: 0 $spacing-lg;
+}
+
+.banner__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: $spacing-md 0;
+
+  @include md {
+    flex-direction: column;
+    margin: $spacing-lg 0;
+  }
+}
+
+.banner__img {
+  flex: 1;
+  object-fit: contain;
+}
+
+.banner__content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner__title {
+  text-align: start;
+  width: 100%;
+  margin-bottom: 3rem;
+  font-size: $font_xx_large;
+  color: white;
+  font-weight: 600;
+
+  @include md {
+    margin-top: $spacing-lg;
+  }
+}
+
+.banner__subtitle {
+  text-align: start;
+  width: 100%;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
+  font-size: $font_large;
+  color: white;
+  font-weight: 500;
+}

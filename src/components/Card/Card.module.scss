@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.card_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 483px;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: #ffff;
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+
+  @include md {
+    flex: none;
+    width: 100%;
+  }
+}
+
+.card_title {
+  color: $primary_color;
+  font-weight: 600;
+  margin: 3rem 0;
+}
