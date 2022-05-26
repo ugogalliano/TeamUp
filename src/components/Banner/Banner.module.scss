@@ -10,10 +10,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin: $spacing-md 0;
-
+  padding:1rem;
   @include md {
-
     flex-direction: column;
   }
 }
@@ -34,14 +32,12 @@
 .banner__title {
   text-align: start;
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-size: $font_xx_large;
   color: white;
   font-weight: 600;
 
-  @include md {
-    margin-top: $spacing-md;
-  }
+ 
 }
 
 .banner__subtitle {
