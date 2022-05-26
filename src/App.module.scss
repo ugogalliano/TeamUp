@@ -13,9 +13,7 @@
   object-fit: cover;
 
   @include md {
-    width: 100vw;
-    height: 603px;
-    left: 0;
+    left: -350px;
     top: 92px;
   }
 }
