@@ -13,8 +13,8 @@
   margin: $spacing-md 0;
 
   @include md {
+
     flex-direction: column;
-    margin: $spacing-lg 0;
   }
 }
 
@@ -40,7 +40,7 @@
   font-weight: 600;
 
   @include md {
-    margin-top: $spacing-lg;
+    margin-top: $spacing-md;
   }
 }
 
