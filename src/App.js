@@ -14,6 +14,7 @@ import background from "./assets/Rectangle1.png";
 function App() {
   return (
     <main className={classes.app_container}>
+      <div className={classes.app_banner}>
       <img
         src={background}
         alt="backgound"
@@ -21,6 +22,9 @@ function App() {
       />
       <Header />
       <Banner />
+
+      </div>
+    
 
       <div className={classes.app_section_container}>
         {/** SERVICES SECTION*/}

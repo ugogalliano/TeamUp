@@ -3,6 +3,9 @@
 .banner {
   width: 100%;
   padding: 0 $spacing-lg;
+  position: absolute;
+  top: 92px;
+  z-index: 20;
 }
 
 .banner__container {
@@ -11,6 +14,7 @@
   justify-content: center;
   flex-direction: row;
   padding:8px;
+  
   @include md {
     flex-direction: column;
   }
@@ -19,6 +23,14 @@
 .banner__img {
   flex: 1;
   object-fit: contain;
+
+  @include md{
+    img{
+      max-width: 100vw;
+      overflow-x: hidden;
+
+    }
+  }
 }
 
 .banner__content {
@@ -27,6 +39,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+ 
 }
 
 .banner__title {
@@ -36,8 +50,10 @@
   font-size: $font_xx_large;
   color: white;
   font-weight: 600;
-
- 
+  
+  @include md {
+    font-size:  $font_large;
+  }
 }
 
 .banner__subtitle {
@@ -48,4 +64,8 @@
   font-size: $font_large;
   color: white;
   font-weight: 500;
+
+  @include md {
+    font-size:  $font_regular;
+  }
 }
