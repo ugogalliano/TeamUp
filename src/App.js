@@ -15,11 +15,6 @@ function App() {
   return (
     <main className={classes.app_container}>
       <div className={classes.app_banner}>
-      <img
-        src={background}
-        alt="backgound"
-        className={classes.app_background}
-      />
       <Header />
       <Banner />
 

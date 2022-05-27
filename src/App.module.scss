@@ -4,14 +4,16 @@
   max-width: 1440px;
   margin: 0 auto;
   overflow-x: hidden;
-
 }
 
-.app_banner{
+.app_banner {
   width: 100%;
   position: relative;
   overflow-x: hidden;
 
+  background-image: url("../src/assets/Rectangle1.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .app_background {
@@ -19,21 +21,21 @@
   object-fit: cover;
   z-index: -10;
 
-  @include md{
+  @include md {
     position: relative;
     left: -500px;
   }
 }
 
-.app__card__container{
+.app__card__container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap:2rem;
-  padding:1rem;
-  
-  @include md{
+  gap: 2rem;
+  padding: 1rem;
+
+  @include md {
     flex-direction: column;
   }
 }

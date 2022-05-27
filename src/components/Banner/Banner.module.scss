@@ -3,13 +3,7 @@
 .banner {
   width: 100%;
   padding: 0 $spacing-lg;
-  position: absolute;
-  top: 15%;
-  z-index: 20;
-
-  @include md {
-    overflow-x: hidden;
-  }
+  
 }
 
 .banner__container {
