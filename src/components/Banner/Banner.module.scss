@@ -4,8 +4,12 @@
   width: 100%;
   padding: 0 $spacing-lg;
   position: absolute;
-  top: 92px;
+  top: 15%;
   z-index: 20;
+
+  @include md {
+    overflow-x: hidden;
+  }
 }
 
 .banner__container {
@@ -13,7 +17,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding:8px;
   
   @include md {
     flex-direction: column;
@@ -24,13 +27,6 @@
   flex: 1;
   object-fit: contain;
 
-  @include md{
-    img{
-      max-width: 100vw;
-      overflow-x: hidden;
-
-    }
-  }
 }
 
 .banner__content {
