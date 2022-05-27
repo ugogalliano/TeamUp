@@ -9,7 +9,6 @@ import ContactUs from "./components/ContactUs/ContactUs";
 
 //utils
 import classes from "./App.module.scss";
-import background from "./assets/Rectangle1.png";
 
 function App() {
   return (
