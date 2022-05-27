@@ -3,36 +3,37 @@
 .banner {
   width: 100%;
   padding: 0 $spacing-lg;
-  
 }
 
 .banner__container {
   display: grid;
-  grid-template-columns:  1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   overflow-y: hidden;
   padding: 1rem;
-  @include md{
-    grid-template-columns:  1fr ;
-
+  @include md {
+    grid-template-columns: 1fr;
   }
- 
 }
 
 .banner__img {
- 
   object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  
-
+  img {
+    @include md{
+      width:200px
+      
+    }
+  }
 }
 
 .banner__content {
-  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
- 
 }
 
 .banner__title {
@@ -43,9 +44,8 @@
   color: white;
   font-weight: 600;
 
-  
   @include md {
-    font-size:  $font_large;
+    font-size: $font_large;
   }
 }
 
@@ -59,6 +59,6 @@
   font-weight: 500;
 
   @include md {
-    font-size:  $font_regular;
+    font-size: $font_regular;
   }
 }
