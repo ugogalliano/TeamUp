@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./BannerTeam.module.scss";
-import teamImage from "../../assets/teamImage.png"
+import TeamImage from "../../assets/teamImage.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BannerTeam = () => {
   return (
@@ -17,12 +18,12 @@ const BannerTeam = () => {
       </div>
 
       <div className={classes.banner_team_img}>
-      <img src={teamImage} alt="Immagine_Team">
-          
-          </img>
+        <LazyLoadImage
+          src={TeamImage}
+          style={{ width: "200px", height: "200px" }}
+          alt="Immagine_Team"
+        />
       </div>
-
-
     </div>
   );
 };

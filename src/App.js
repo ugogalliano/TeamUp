@@ -6,19 +6,17 @@ import Card from "./components/Card/Card";
 import BannerTeam from "./components/BannerTeam/BannerTeam";
 import AboutSection from "./components/AboutSection/AboutSection";
 import ContactUs from "./components/ContactUs/ContactUs";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import BannerImage from "../src/assets/Rectangle1.png";
 //utils
 import classes from "./App.module.scss";
 
 function App() {
   return (
     <main className={classes.app_container}>
-      <div className={classes.app_banner}>
+      <LazyLoadImage src={BannerImage} className={classes.app_banner} />
       <Header />
       <Banner />
-
-      </div>
-    
 
       <div className={classes.app_section_container}>
         {/** SERVICES SECTION*/}
@@ -40,7 +38,7 @@ function App() {
 
         {/**  CONTACT US SECTION*/}
         <TitleSection title={"Contact"} id="contact_us" />
-      <ContactUs/>
+        <ContactUs />
       </div>
     </main>
   );

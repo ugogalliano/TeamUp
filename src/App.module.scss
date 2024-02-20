@@ -8,9 +8,11 @@
 
 .app_banner {
   width: 100%;
-  position: relative;
+  position:absolute ;
+  top: 0;
+  left: 0;
+  z-index: -1;
   overflow-x: hidden;
-  background-image: url("../src/assets/Rectangle1.png");
   background-position: center;
   background-repeat: no-repeat;
 }
