@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.66aae6c8.css",
+    "main.js": "/static/js/main.bad76261.js",
+    "static/media/Rectangle1.png": "/static/media/Rectangle1.7d26e8f20798588c8c2b.png",
+    "static/media/teamImage.png": "/static/media/teamImage.1e9d968ef39ea0ed582d.png",
+    "static/media/teamupsolution1.svg": "/static/media/teamupsolution1.09d029db64c60174462e9b73b86acb73.svg",
+    "static/media/girl.png": "/static/media/girl.7db799e65247016b20be.png",
+    "index.html": "/index.html",
+    "main.66aae6c8.css.map": "/static/css/main.66aae6c8.css.map",
+    "main.bad76261.js.map": "/static/js/main.bad76261.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66aae6c8.css",
+    "static/js/main.bad76261.js"
+  ]
+}
