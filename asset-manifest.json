@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/TeamUp/static/css/main.66aae6c8.css",
-    "main.js": "/TeamUp/static/js/main.0e148ff4.js",
-    "static/media/Rectangle1.png": "/TeamUp/static/media/Rectangle1.7d26e8f20798588c8c2b.png",
-    "static/media/teamImage.png": "/TeamUp/static/media/teamImage.1e9d968ef39ea0ed582d.png",
-    "static/media/teamupsolution1.svg": "/TeamUp/static/media/teamupsolution1.09d029db64c60174462e9b73b86acb73.svg",
-    "static/media/girl.png": "/TeamUp/static/media/girl.7db799e65247016b20be.png",
-    "index.html": "/TeamUp/index.html",
-    "main.66aae6c8.css.map": "/TeamUp/static/css/main.66aae6c8.css.map",
-    "main.0e148ff4.js.map": "/TeamUp/static/js/main.0e148ff4.js.map"
+    "main.css": "/team_up/static/css/main.66aae6c8.css",
+    "main.js": "/team_up/static/js/main.6fbf71ba.js",
+    "static/media/Rectangle1.png": "/team_up/static/media/Rectangle1.7d26e8f20798588c8c2b.png",
+    "static/media/teamImage.png": "/team_up/static/media/teamImage.1e9d968ef39ea0ed582d.png",
+    "static/media/teamupsolution1.svg": "/team_up/static/media/teamupsolution1.09d029db64c60174462e9b73b86acb73.svg",
+    "static/media/girl.png": "/team_up/static/media/girl.7db799e65247016b20be.png",
+    "index.html": "/team_up/index.html",
+    "main.66aae6c8.css.map": "/team_up/static/css/main.66aae6c8.css.map",
+    "main.6fbf71ba.js.map": "/team_up/static/js/main.6fbf71ba.js.map"
   },
   "entrypoints": [
     "static/css/main.66aae6c8.css",
-    "static/js/main.0e148ff4.js"
+    "static/js/main.6fbf71ba.js"
   ]
 }
