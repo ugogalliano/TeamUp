@@ -12,6 +12,7 @@ import BannerImage from "../src/assets/Rectangle1.png";
 import classes from "./App.module.scss";
 
 function App() {
+  qwq;
   return (
     <main className={classes.app_container}>
       <LazyLoadImage src={BannerImage} className={classes.app_banner} />
