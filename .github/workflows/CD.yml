@@ -1,0 +1,27 @@
+name: TEAM-UP-CD
+on:
+  workflow_run:
+    workflows: ["team-up-CI"]
+    branches: [main]
+    types: 
+      - completed
+    
+jobs:
+  deploy-production:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+
+
+    - name: Deploy to GitHub Pages (Production)
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        FOLDER: build
