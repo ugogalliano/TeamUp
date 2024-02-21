@@ -1,4 +1,5 @@
 name: TEAM-UP-CD
+
 on:
   workflow_run:
     workflows: ["team-up-CI"]
@@ -19,12 +20,11 @@ jobs:
         with:
           node-version: 14
 
-       - name: Install dependencies
-      run: npm i
+      - name: Install dependencies
+        run: npm i
 
-    - name: Run build
-      run: npm run build
-
+      - name: Run build
+        run: npm run build
 
       - name: Deploy to GitHub Pages (Production)
         uses: JamesIves/github-pages-deploy-action@4.1.4
