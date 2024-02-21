@@ -3,26 +3,32 @@ on:
   workflow_run:
     workflows: ["team-up-CI"]
     branches: [main]
-    types: 
+    types:
       - completed
-    
+
 jobs:
   deploy-production:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 14
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+       - name: Install dependencies
+      run: npm i
+
+    - name: Run build
+      run: npm run build
 
 
-    - name: Deploy to GitHub Pages (Production)
-      uses: JamesIves/github-pages-deploy-action@4.1.4
-      with:
-        TOKEN: ${{ secrets.token }}
-        BRANCH: gh-pages
-        FOLDER: build
+      - name: Deploy to GitHub Pages (Production)
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          TOKEN: ${{ secrets.token }}
+          BRANCH: gh-pages
+          FOLDER: build
