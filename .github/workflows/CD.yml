@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-              lfs: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -28,9 +26,9 @@ jobs:
       - name: Run build
         run: npm run build
 
-      - name: Deploy to GitHub Pages (Production)
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          TOKEN: ${{ secrets.TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build 
+
